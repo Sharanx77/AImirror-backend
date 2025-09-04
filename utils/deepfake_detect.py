@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from PIL import Image
 
-model = load_model('model/deepfake_model.h5')
+model = load_model('model/deepfake_model.pth')
 
 def detect_deepfake_image(file):
     img = Image.open(file).resize((128, 128))
